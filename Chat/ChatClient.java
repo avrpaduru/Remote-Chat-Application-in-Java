@@ -36,7 +36,7 @@ public class ChatClient extends JPanel
 		setLayout(new BorderLayout());
 		try
 		{
-			clientSocket = new Socket("192.168.1.41",5555);//socket(), connect to server 5555
+			clientSocket = new Socket("Server IP Address(Inet)",5555);//socket(), connect to server 5555
 			reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 			writer = new PrintWriter(clientSocket.getOutputStream());
 		}catch(Exception e){System.out.println("Exception Occured");}
